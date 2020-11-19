@@ -1,5 +1,5 @@
 # NER & Extraction from product-data
-The **goal** of this task is to extract product information such as **BRAND NAME, SIZE, COLOR, GENDER,AGE,VOLUME, WEIGHT** from product's titles and descriptions supplied by 119 unique providers. There are 670k observations in the dataset. There is no missing data in brand column, so it can be used to annotate Brand Name.  Meta column is also quite useful for labeling the data(size,color,gender and age) despite missing some information.https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/branding.py
+The **goal** of this task is to extract product information such as **BRAND NAME, SIZE, COLOR, GENDER,AGE,VOLUME, WEIGHT** from product's titles and descriptions supplied by 119 unique providers. There are 670k observations in the dataset. There is no missing data in brand column, so it can be used to annotate Brand Name [branding.py] (https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/branding.py)  Meta column is also quite useful for labeling the data(size,color,gender and age) despite missing some information.
 
 This is how it looks like
 ![sample](img/sample.png)
