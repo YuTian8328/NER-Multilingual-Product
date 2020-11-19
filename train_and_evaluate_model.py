@@ -7,8 +7,9 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, TimeDistributed, Dropout, Bidirectional
 
-#Randomly split 670k observations into training set,validation set and test set
+# Run branding.py first to generate the file 'after_branding.csv'
 df = pd.read_csv('after_branding.csv',converters={'combined':eval})
+# Randomly split 670k observations into training set,validation set and test set
 test_set = df.sample(frac=0.1,random_state=200) 
 train_val = df.drop(test_set.index)
 val_set = train_val.sample(frac=0.3,random_state=200)
