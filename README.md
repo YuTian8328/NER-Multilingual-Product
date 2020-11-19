@@ -51,7 +51,7 @@ The architecture looks like this:
 <img src="img/architecture.png" width="700"/>
 
 ## Test with unseen text example
-([test_example.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/test_example.py))
+[test_example.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/test_example.py)
 
 
 
