@@ -13,6 +13,8 @@ As the texts are mixture of Finnish and English, and lots of brand names are rar
 
 The solution is to train a custom word embedding model by using library **gensim** and library **nltk** with this special corpus([train_custom_w2v.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/train_custom_w2v.py)). Based on this custom word embedding model, the NER Model can extract Brand Names quite effectively (Test set accuracy approximates 99.5%)([train_and_evaluate_model.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/train_and_evaluate_model.py))
 
+
+
 ## COLOR, VOLUME, WEIGHT, GENDER, AGE
 Color,volume,weight,gender and age are labled by using regex and information from meta column.
 
