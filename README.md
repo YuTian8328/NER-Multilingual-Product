@@ -11,13 +11,13 @@ This is how it looks like
 Lots of brand names are rarely-used words or industry-created new words, thus existing word embedding methods, such as GloVe or Bert, can't properly embedding them. If these words can't be embedded properly in a NER model, it's definitely a big problem.
 
 
-The solution is to train a custom word embedding model by using library **gensim** and library **nltk** with this special corpus. Based on this custom word embedding model, the NER Model can extract Brand Names quite effectively (Test set accuracy approximates 99.5%)([train_model.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/train_model.py))
+The solution is to train a custom word embedding model by using library **gensim** and library **nltk** with this special corpus. Based on this custom word embedding model, the NER Model can extract Brand Names quite effectively (Test set accuracy approximates 99.5%)([train_and_evaluate_model.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/train_and_evaluate_model.py))
 
 ## COLOR, VOLUME, WEIGHT, GENDER, AGE
 Color,volume,weight,gender and age are labled by using regex and information from meta column.
 
 The NER Model has also achieved quite good performance in extracting color,volume and weight as well as brand name.
-Test set accuracy is 99.65%.([train_model.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/train_model.py))
+Test set accuracy is 99.65%.([train_and_evaluate_model.py](https://github.com/YuTian8328/NER-Finnish-English-Product/blob/main/train_and_evaluate_model.py))
 
 
 
