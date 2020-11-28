@@ -23,7 +23,8 @@ def size_extract_via_regex(text):
         if word in ['koko','kokoja','kokoa','size','sizes','koossa']:
             for j in range(i,len(word_list)):
                 if word_list[j] in SIZES:
-                    size.append(word_list[j])
+                    if word_list[j] not in size:
+                        size.append(word_list[j])
     print(' '.join(size))
 def entity_extract(sentence):
     '''extract BRAND,COLOR,GENDER,VOLUME,WEIGHT information by using the NER model trained previously'''
@@ -54,7 +55,8 @@ def entity_extract(sentence):
     pred_tag=[NUM_TO_TAG[p] for p in pred]
     for w,t in zip(word_list,pred_tag):
         if t == 'BRAND':
-            brand.append(w.title())
+            if w.title() not in brand:
+                brand.append(w.title())
         elif t == 'COLOR':
             color.append(w)
         elif t == 'GENDER':
